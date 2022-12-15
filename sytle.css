@@ -48,6 +48,10 @@ footer {
     margin: 40px 0;
 }
 
+.fe-box>h6 {
+    cursor: default;
+}
+
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -495,7 +499,6 @@ footer a {
         max-width: 100%;
     }
 }
-
 
 #page-header.about-header {
     background-image: url(./assets/1920-X-700-with-Overlay-About-Us-1.png.webp);
