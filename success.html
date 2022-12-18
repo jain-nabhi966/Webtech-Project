@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="checkout">
+        Success!
+    </div>
+</body>
+<script>
+    setTimeout(function () {
+        if (cart) {
+            orders.push(cart);
+            window.localStorage.setItem('orders', JSON.stringify(cart));
+            window.localStorage.setItem('cart', '{}');
+        }
+
+        window.location.href = '/main.html';
+    }, 1000);
+</script>
+
+</html>

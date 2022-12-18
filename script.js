@@ -21,7 +21,7 @@ const products = [
         name: 'Dell Alienware X1',
         price: '1800',
         link: '/products/macbook.html',
-        image: '/assets/mxw_640,f_auto.avif',
+        image: '/assets/mxw_640,f_autod.avif',
     },
     {
         name: 'Lenovo Think Pad Yoga',
@@ -69,6 +69,8 @@ function setItemsInCart(id, quantity) {
     if (document.getElementById(`counter_${id}`)) {
         document.getElementById(`counter_${id}`).innerText = cart[id] || 0;
     }
+
+    if (window.location.pathname.includes('cart')) showCartTable();
 }
 
 function addItemInCart(id) {
@@ -104,4 +106,53 @@ function addbtn() {
             `;
         }
     }
+}
+
+function showCartTable() {
+    const keys = Object.keys(cart);
+    const table = document.getElementById('cart-table');
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+            </tr>
+        </thead>
+    `
+
+    let total = 0;
+
+    for (let i = 0; i < keys.length; i += 1) {
+        const product = products[keys[i]];
+        total += product.price * cart[keys[i]];
+
+        if (table) {
+            const row = document.createElement('tbody');
+            row.innerHTML = `
+                <td><img onclick="setItemsInCart('${keys[i]}', 0); showCartTable()" src="./assets/icons8-remove-48.png"></td>
+                <td><a href="${product.link}"><img width="200px" src="${product.image}"></a></td>
+                <td>${product.name}</td>
+                <td>$${product.price} x ${cart[keys[i]]} = $${product.price * cart[keys[i]]}</td>
+                <td class="cart-quantity">
+                    <div id="${keys[i]}" class="space-evenly">
+                        <button onclick="addItemInCart('${keys[i]}');addbtn();showCartTable();"></button>
+                    </div>
+                </td>
+            `;
+            table.appendChild(row);
+        }
+    }
+
+    for (let elem of document.getElementsByClassName('cart-total')) {
+        elem.innerHTML = total;
+    }
+
+    addbtn();
+}
+
+function checkout() {
+    window.location.href = '/success.html';
 }

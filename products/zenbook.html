@@ -10,15 +10,21 @@
 
 <body>
     <section id="header">
-        <a href="/main.html"><img src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png"
-                class="logo" alt="" width="220px" height="110px"></a>
+        <a href="/main.html"><img
+                src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png" class="logo"
+                alt="" width="220px" height="110px"></a>
         <div>
             <ul id="navbar">
                 <li><a href="../main.html">Home</a></li>
                 <li><a class="active" href="../shop.html">Shop</a></li>
                 <li><a href="../about.html">About</a></li>
                 <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../cart.html"><i class="fa fa-shopping-cart" style="font-size:32px;"></i></a></li>
+                <li>
+                    <a href="../cart.html">
+                        <i class="fa fa-shopping-cart cart-head" style="font-size:32px;"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
@@ -29,14 +35,18 @@
         <div class="single-pro-deatils">
             <h6>Home / Laptops</h6>
             <h4>Gaming Laptop</h4>
-            <br/>
+            <br />
             <h4>Asus Zenbook Duo</h4>
             <h2>$2400</h2>
             <div id="1" class="space-evenly">
                 <button class="add-to-cart" onclick="addItemInCart('1');addbtn();">Add To Cart</button>
             </div>
             <h4 class="product-details-header">Product Details</h4>
-            <div class="product-description">ASUS ZenBook Duo 14 lets you get things done in style: calmly, efficiently, and with zero fuss. It’s your powerful and elegant next-level companion for on-the-go productivity and creativity, featuring the ScreenPad™ Plus secondary display with a brand-new tilting design that offers effortless ergonomics and seamless workflows. Powered by the latest 11th Gen Intel® Core™ processors, ASUS ZenBook Duo 14 brings you all the benefits of tomorrow’s technology, today.
+            <div class="product-description">ASUS ZenBook Duo 14 lets you get things done in style: calmly, efficiently,
+                and with zero fuss. It’s your powerful and elegant next-level companion for on-the-go productivity and
+                creativity, featuring the ScreenPad™ Plus secondary display with a brand-new tilting design that offers
+                effortless ergonomics and seamless workflows. Powered by the latest 11th Gen Intel® Core™ processors,
+                ASUS ZenBook Duo 14 brings you all the benefits of tomorrow’s technology, today.
             </div>
         </div>
     </section>
@@ -65,7 +75,8 @@
                     </tr>
                     <tr>
                         <th>Phone:</th>
-                        <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403</td></a>
+                        <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403
+                        </td></a>
                     </tr>
                     <tr>
                         <th>Hours:</th>
@@ -123,4 +134,6 @@
 <script>
     addbtn();
 </script>
+<script src="../script-count.js"></script>
+
 </html>

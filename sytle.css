@@ -639,11 +639,6 @@ footer a {
     text-align: center;
 }
 
-#cart table td:nth-child(5) input {
-    width: 70px;
-    padding: 10px 5px 10px 15px;
-}
-
 #cart table thead {
     border: 1px solid #e2e9e1;
     border-left: none;
@@ -734,11 +729,11 @@ footer a {
     margin-bottom: .6em;
 }
 
-.counter > * {
+.counter>* {
     margin: 0 .5em;
 }
 
-.counter > input {
+.counter>input {
     padding: .4rem .7rem;
     font-size: large;
     background: #cfd7f9;
@@ -747,17 +742,40 @@ footer a {
     cursor: pointer;
 }
 
-.space-evenly > span {
+.space-evenly>span {
     justify-content: center;
     margin: 1em 0;
 }
 
-.space-evenly > span > * {
+.space-evenly>span>* {
     margin: 0 1em;
 }
 
+.cart-quantity>span>input {
+    padding: 0;
+    margin: 0;
+}
+
 @media screen and (max-width: 1300px) {
-    .space-evenly > span {
+    .space-evenly>span {
         justify-content: left;
     }
+}
+
+.checkout {
+    background: #0F05;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40;
+}
+
+.cart-head {
+    position: relative;
+}
+
+.cart-head>span {
+    position: absolute;
 }

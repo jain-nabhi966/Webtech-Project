@@ -10,15 +10,21 @@
 
 <body>
     <section id="header">
-        <a href="/main.html"><img src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png"
-                class="logo" alt="" width="220px" height="110px"></a>
+        <a href="/main.html"><img
+                src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png" class="logo"
+                alt="" width="220px" height="110px"></a>
         <div>
             <ul id="navbar">
                 <li><a href="../main.html">Home</a></li>
                 <li><a class="active" href="../shop.html">Shop</a></li>
                 <li><a href="../about.html">About</a></li>
                 <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../cart.html"><i class="fa fa-shopping-cart" style="font-size:32px;"></i></a></li>
+                <li>
+                    <a href="../cart.html">
+                        <i class="fa fa-shopping-cart cart-head" style="font-size:32px;"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
@@ -36,7 +42,10 @@
                 <button class="add-to-cart" onclick="addItemInCart('6');addbtn();">Add To Cart</button>
             </div>
             <h4 class="product-details-header">Product Details</h4>
-            <div class="product-description">Get immersed in content with bright, color rich panels with high resolution, with more viewing space to keep you productive. Integrated Eyesafe display technology helps to reduce harmful blue light while maintaining vivid color. The stunning 4-sided InfinityEdge display enables a large 16:10 screen and 92.9% screen to body ratio.</div>
+            <div class="product-description">Get immersed in content with bright, color rich panels with high
+                resolution, with more viewing space to keep you productive. Integrated Eyesafe display technology helps
+                to reduce harmful blue light while maintaining vivid color. The stunning 4-sided InfinityEdge display
+                enables a large 16:10 screen and 92.9% screen to body ratio.</div>
         </div>
     </section>
     <section class="gallary">
@@ -64,7 +73,8 @@
                     </tr>
                     <tr>
                         <th>Phone:</th>
-                        <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403</td></a>
+                        <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403
+                        </td></a>
                     </tr>
                     <tr>
                         <th>Hours:</th>
@@ -122,4 +132,6 @@
 <script>
     addbtn();
 </script>
+<script src="../script-count.js"></script>
+
 </html>

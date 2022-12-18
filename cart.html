@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Contact Us</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="sytle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./script.js"></script>
@@ -16,7 +16,12 @@
             <li><a href="shop.html">Shop</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a class="active" href="cart.html"><i class="fa fa-shopping-cart" style="font-size:32px;"></i></a></li>
+            <li>
+                <a href="cart.html" class="active">
+                    <i class="fa fa-shopping-cart cart-head" style="font-size:32px;"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
         </ul>
     </div>
 </section>
@@ -26,56 +31,32 @@
     <p>Counting down the days to see you next!</p>
 </section>
 <section id="cart" class="section-p1">
-    <table width="100%">
-         <thead>
-              <tr>
+    <table width="100%" id="cart-table">
+        <thead>
+            <tr>
                 <td>Remove</td>
                 <td>Image</td>
                 <td>Product</td>
                 <td>Price</td>
                 <td>Quantity</td>
-              </tr>
-         </thead>
-         <tbody>
-             <td><a href="#"><img src="./assets/icons8-remove-48.png"></a></td>
-             <td><img width="200px" src="./assets/546A0081-35C3-488F-BA26-EA2FFBC9E79F.png"></td>
-             <td>Asus ROG Strix G15</td>
-             <td>$1200</td>
-             <td><input type="number" value="1"></td>
-         </tbody>
-
-         <tbody>
-            <td><a href="#"><img src="./assets/icons8-remove-48.png"></a></td>
-            <td><img width="200px" src="./assets/mxw_640,f_auto.avif"></td>
-            <td>Apple Macbook Pro m1 Pro</td>
-            <td>$1500</td>
-            <td><input type="number" value="1"></td>
-        </tbody>
-
-        <tbody>
-            <td><a href="#"><img src="./assets/icons8-remove-48.png"></a></td>
-            <td><img width="200px" src="./assets/mxw_640,f_autod.avif"></td>
-            <td>Dell AlienWare X1</td>
-            <td>$1800</td>
-            <td><input type="number" value="1"></td>
-        </tbody>
-        
+            </tr>
+        </thead>
     </table>
 </section>
 <section id="cart-add" class="section-p1">
-    <div id="coupon">
+    <!-- <div id="coupon">
         <h3>Apply Coupon</h3>
         <div>
             <input type="text" placeholder="Enter Your Coupon">
             <button class="normal">Apply</button>
         </div>
-    </div>
+    </div> -->
     <div id="subtotal">
         <h3 style="color: black;">Cart Total</h3>
         <table>
             <tr>
                 <td>Cart Subtotal</td>
-                <td>$ 4500</td>
+                <td>$<span class="cart-total">0</span></td>
             </tr>
 
             <tr>
@@ -85,11 +66,11 @@
 
             <tr>
                 <td><strong>Total Payable</strong></td>
-                <td><strong>$ 4500</strong></td>
+                <td><strong>$<span class="cart-total">0</span></strong></td>
             </tr>
         </table>
         <br>
-        <button class="normal">Proceed to Checkout</button>
+        <button class="normal" onclick="checkout()">Proceed to Checkout</button>
     </div>
 </section>
 <footer>
@@ -111,7 +92,8 @@
                 </tr>
                 <tr>
                     <th>Phone:</th>
-                    <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403</td></a>
+                    <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403</td>
+                    </a>
                 </tr>
                 <tr>
                     <th>Hours:</th>
@@ -164,7 +146,11 @@
         </div>
     </div>
 </footer>
-<script src="script.js"></script>
 </body>
+<script src="./script-count.js"></script>
+<script>
+    showCartTable();
+    addbtn();
+</script>
 
 </html>
