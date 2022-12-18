@@ -4,6 +4,7 @@
         <title>Home</title>
         <link rel="stylesheet" href="sytle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./script.js"></script>
     </head>
     <body>
         <section id="header">
@@ -23,7 +24,9 @@
             <h2>Best for ML tasks</h2>
             <h1>ASUS STRIX G-17</h1>
             <p>Rs. 5000 off on PreBooking</p>
-            <button>Pre Book</button>
+            <div id="prebook-btn">
+                <button onclick="preBook()">Pre Book</button>
+            </div>
         </section>
         <section id="feature" class="section-p1">
             <div class="fe-box">
@@ -62,7 +65,7 @@
             </div>
 
         </section>
-        <section id="product1" class="section-p1">
+        <!-- <section id="product1" class="section-p1">
             <h2>Featured Products</h2>
             <p>Some of the newest PC which are top of its class and light on the budget</p>
             <div class="pro-container">
@@ -202,12 +205,12 @@
                     <a href="#"><img class = cart src="./assets/icons8-shopping-cart-40.png"></a>
                 </div>
             </div>
-        </section>
+        </section> -->
         <script src="script.js"></script>
         <section id="banner">
             <h4>Product Line Up</h4>
             <p>Variety of our Products Ranges from the <span style="color: aquamarine;">Buisness Laptops</span> to high spec <span style="color: rgb(255, 75, 75);">Gaming Series</span></p>
-            <button class="normal">Explore More</button>
+            <button class="normal" onclick="window.location = '/shop.html#product1'">Explore More</button>
         </section>
         <footer>
             <div class="col">
@@ -228,7 +231,7 @@
                         </tr>
                         <tr>
                             <th>Phone:</th>
-                            <td>+1 1800 5042, +91 7290024403</td>
+                            <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403</td></a>
                         </tr>
                         <tr>
                             <th>Hours:</th>
@@ -261,7 +264,7 @@
                     <div>
                         <div class="row download-row">
                             <div>
-                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                <a href="#" rel="noopener noreferrer">
                                     <img width="220px" src="./assets/Download_on_the_App_Store_Badge.svg.png">
                                 </a>
                             </div>
@@ -282,4 +285,9 @@
             </div>
         </footer>
     </body>
+    <script>
+        if (window.localStorage.getItem('prebook-item')) {
+            document.getElementById('prebook-btn').innerHTML = '<span>Prebooked</span>';
+        }
+    </script>
 </html>

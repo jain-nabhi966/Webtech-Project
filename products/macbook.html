@@ -5,11 +5,12 @@
     <title>Shop</title>
     <link rel="stylesheet" href="../sytle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script.js"></script>
 </head>
 
 <body>
     <section id="header">
-        <a href="#"><img src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png"
+        <a href="/main.html"><img src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png"
                 class="logo" alt="" width="220px" height="110px"></a>
         <div>
             <ul id="navbar">
@@ -23,27 +24,26 @@
     </section>
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="../assets/546A0081-35C3-488F-BA26-EA2FFBC9E79F.png" width="600px" id="MainImg">
+            <img src="../assets/mxw_640,f_auto.avif" width="600px" id="MainImg">
         </div>
         <div class="single-pro-deatils">
             <h6>Home / Laptops</h6>
             <h4>Gaming Laptop</h4>
-            <h2>$1200</h2>
-            <button class="add-to-cart">Add To Cart</button>
+            <br/>
+            <h4>Apple MacBook Pro M1 Ultra</h4>
+            <h2>$2200</h2>
+            <div id="2" class="space-evenly">
+                <button class="add-to-cart" onclick="addItemInCart('2');addbtn();">Add To Cart</button>
+            </div>
             <h4 class="product-details-header">Product Details</h4>
-            <div class="product-description">Focused firepower streamlines and elevates the core Windows 10 Pro gaming
-                experience in the ROG Strix G15/17. With up to a powerful AMD Ryzen™ 9 5900HX CPU and GeForce RTX™ 3070
-                GPU, everything from gaming to multitasking is fast and fluid. Go full-throttle on esports speed with a
-                competition-grade display up to 300Hz/3ms, or immerse in rich detail on a WQHD 165Hz/3ms panel.
-                Adaptive-Sync makes gameplay ultrasmooth, while advanced thermal upgrades help you stay cool under
-                pressure. No matter what your game is, you can achieve your perfect play.</div>
+            <div class="product-description">The 2021 MacBook Pro refresh introduces a new 14-inch screen size, and sees the debut of Apple's more powerful M1 Pro and M1 Max processors. Fans will be happy that MagSafe, HDMI, and an SD card slot have returned, and few will complain that Apple has dropped the Touch Bar. However the new notched screen will be a controversial feature. In use, the new MacBook Pro delivers excellent performance as well as battery life. The screen is crisp and vibrant, and apart from a few bugs, the notch is easy to get used to. The speakers are surprisingly rich and powerful, and Apple has done well with its keyboard, trackpad and webcam as well. Starting prices are high, and Apple still charges way too much for higher RAM and storage tiers. None of the hardware is upgradeable. Apple fans looking for an upgrade will like the new MacBook Pro, but there are plenty of reasonably priced Windows alternatives out there now.</div>
         </div>
     </section>
     <section class="gallary">
         <!-- <img src="../assets/546A0081-35C3-488F-BA26-EA2FFBC9E79F.png" width="14%" class="small-img"> -->
-        <img src="../assets/71n0k0TSRwS._AC_SL1500_.jpg" width="14%" class="small-img">
-        <img src="../assets/81lq4pVKgQL._AC_SL1500_.jpg" width="14%" class="small-img">
-        <img src="../assets/strix-g-2022-pink.png" width="14%" class="small-img">
+        <img src="../assets/mxw_640,f_auto.avif" width="14%" class="small-img">
+        <img src="../assets/6K0G43Z4-eoocoo-premium-keyboard-cover-ultra-thin.jpg" width="14%" class="small-img">
+        <img src="../assets/14-16-inch-macbook-pro-2021-1.webp" width="14%" class="small-img">
     </section>
     <footer>
         <div class="col">
@@ -64,7 +64,7 @@
                     </tr>
                     <tr>
                         <th>Phone:</th>
-                        <td>+1 1800 5042, +91 7290024403</td>
+                        <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403</td></a>
                     </tr>
                     <tr>
                         <th>Hours:</th>
@@ -97,7 +97,7 @@
                 <div>
                     <div class="row download-row">
                         <div>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
+                            <a href="#" rel="noopener noreferrer">
                                 <img width="220px" src="../assets/Download_on_the_App_Store_Badge.svg.png">
                             </a>
                         </div>
@@ -119,5 +119,7 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
+<script>
+    addbtn();
+</script>
 </html>

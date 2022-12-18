@@ -5,11 +5,12 @@
     <title>Shop</title>
     <link rel="stylesheet" href="../sytle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script.js"></script>
 </head>
 
 <body>
     <section id="header">
-        <a href="#"><img src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png"
+        <a href="/main.html"><img src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png"
                 class="logo" alt="" width="220px" height="110px"></a>
         <div>
             <ul id="navbar">
@@ -23,27 +24,26 @@
     </section>
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="../assets/546A0081-35C3-488F-BA26-EA2FFBC9E79F.png" width="600px" id="MainImg">
+            <img src="../assets/mxw_640,f_autod.avif" width="600px" id="MainImg">
         </div>
         <div class="single-pro-deatils">
             <h6>Home / Laptops</h6>
             <h4>Gaming Laptop</h4>
-            <h2>$1200</h2>
-            <button class="add-to-cart">Add To Cart</button>
+            <br/>
+            <h4>Dell Alienware X1</h4>
+            <h2>$1800</h2>
+            <div id="3" class="space-evenly">
+                <button class="add-to-cart" onclick="addItemInCart('3');addbtn();">Add To Cart</button>
+            </div>
             <h4 class="product-details-header">Product Details</h4>
-            <div class="product-description">Focused firepower streamlines and elevates the core Windows 10 Pro gaming
-                experience in the ROG Strix G15/17. With up to a powerful AMD Ryzen™ 9 5900HX CPU and GeForce RTX™ 3070
-                GPU, everything from gaming to multitasking is fast and fluid. Go full-throttle on esports speed with a
-                competition-grade display up to 300Hz/3ms, or immerse in rich detail on a WQHD 165Hz/3ms panel.
-                Adaptive-Sync makes gameplay ultrasmooth, while advanced thermal upgrades help you stay cool under
-                pressure. No matter what your game is, you can achieve your perfect play.</div>
+            <div class="product-description">The thinnest gaming laptop from Dell — Alienware x14 — sports a 14-inch full-HD (1,920x1,080 pixels) display with a 144Hz refresh rate. It features Nvidia G-Sync, Advanced Optimus, 400 nits of peak brightness, 100 percent DCI-P3 colour gamut, and Dolby Vision. The laptop also supports Dolby Atmos with spatial audio. It runs Windows 11 and is powered by 12th Gen Intel Core i7 'Alder Lake' processors paired with up to 32GB LPDDR5 RAM and up to Nvidia GeForce RTX 3060 graphic cards. Users will be able to configure up to 2TB of PCIe NVMe M.2 SSD. Connectivity options include Wi-Fi 6E with 802.11ax, Bluetooth v5.2, three USB 3.2 Gen 2 Type-C ports with USB PowerDelivery, two Thunderbolt 4 ports, Display port 1.4, HDMI 2.1, USB 3.2 Gen 1 Type-A port, a microSD 5.2 slot, and a 3.5mm headphone jack. It packs an 80Whr battery with a claimed battery life of 11 hours. Alienware x14 measures 14.5x262.77x321.5mm and weighs from 1.7 to 1.8 kilograms.</div>
         </div>
     </section>
     <section class="gallary">
         <!-- <img src="../assets/546A0081-35C3-488F-BA26-EA2FFBC9E79F.png" width="14%" class="small-img"> -->
-        <img src="../assets/71n0k0TSRwS._AC_SL1500_.jpg" width="14%" class="small-img">
-        <img src="../assets/81lq4pVKgQL._AC_SL1500_.jpg" width="14%" class="small-img">
-        <img src="../assets/strix-g-2022-pink.png" width="14%" class="small-img">
+        <img src="../assets/mxw_640,f_autod.avif" width="14%" class="small-img">
+        <img src="../assets/dell_alienware_m17_r5_1641384811250.webp" width="14%" class="small-img">
+        <img src="../assets/aw15r5nt_lnb_00055rf110_gy.png" width="14%" class="small-img">
     </section>
     <footer>
         <div class="col">
@@ -64,7 +64,7 @@
                     </tr>
                     <tr>
                         <th>Phone:</th>
-                        <td>+1 1800 5042, +91 7290024403</td>
+                        <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403</td></a>
                     </tr>
                     <tr>
                         <th>Hours:</th>
@@ -97,7 +97,7 @@
                 <div>
                     <div class="row download-row">
                         <div>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
+                            <a href="#" rel="noopener noreferrer">
                                 <img width="220px" src="../assets/Download_on_the_App_Store_Badge.svg.png">
                             </a>
                         </div>
@@ -119,5 +119,7 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
+<script>
+    addbtn();
+</script>
 </html>

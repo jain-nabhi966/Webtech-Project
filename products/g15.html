@@ -5,12 +5,14 @@
     <title>Shop</title>
     <link rel="stylesheet" href="../sytle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script.js"></script>
 </head>
 
 <body>
     <section id="header">
-        <a href="#"><img src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png"
-                class="logo" alt="" width="220px" height="110px"></a>
+        <a href="/main.html"><img
+                src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png" class="logo"
+                alt="" width="220px" height="110px"></a>
         <div>
             <ul id="navbar">
                 <li><a href="../main.html">Home</a></li>
@@ -28,8 +30,12 @@
         <div class="single-pro-deatils">
             <h6>Home / Laptops</h6>
             <h4>Gaming Laptop</h4>
+            <br />
+            <h4>Asus ROG Strix Scar G15</h4>
             <h2>$1200</h2>
-            <button class="add-to-cart">Add To Cart</button>
+            <div id="0" class="space-evenly">
+                <button class="add-to-cart" onclick="addItemInCart('0');addbtn();">Add To Cart</button>
+            </div>
             <h4 class="product-details-header">Product Details</h4>
             <div class="product-description">Focused firepower streamlines and elevates the core Windows 10 Pro gaming
                 experience in the ROG Strix G15/17. With up to a powerful AMD Ryzen™ 9 5900HX CPU and GeForce RTX™ 3070
@@ -64,7 +70,8 @@
                     </tr>
                     <tr>
                         <th>Phone:</th>
-                        <td>+1 1800 5042, +91 7290024403</td>
+                        <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403
+                        </td></a>
                     </tr>
                     <tr>
                         <th>Hours:</th>
@@ -97,7 +104,7 @@
                 <div>
                     <div class="row download-row">
                         <div>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
+                            <a href="#" rel="noopener noreferrer">
                                 <img width="220px" src="../assets/Download_on_the_App_Store_Badge.svg.png">
                             </a>
                         </div>
@@ -119,5 +126,7 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
+<script>
+    addbtn();
+</script>
 </html>

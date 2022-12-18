@@ -5,11 +5,12 @@
     <title>Shop</title>
     <link rel="stylesheet" href="../sytle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script.js"></script>
 </head>
 
 <body>
     <section id="header">
-        <a href="#"><img src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png"
+        <a href="/main.html"><img src="../assets/Black_White_Modern_Monochrome_Science_Technology_Logo-removebg-preview.png"
                 class="logo" alt="" width="220px" height="110px"></a>
         <div>
             <ul id="navbar">
@@ -23,27 +24,27 @@
     </section>
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="../assets/546A0081-35C3-488F-BA26-EA2FFBC9E79F.png" width="600px" id="MainImg">
+            <img src="../assets/269f6f2e-25e4-48fb-8926-b1f5d4ca75a0.png" width="600px" id="MainImg">
         </div>
         <div class="single-pro-deatils">
             <h6>Home / Laptops</h6>
             <h4>Gaming Laptop</h4>
-            <h2>$1200</h2>
-            <button class="add-to-cart">Add To Cart</button>
+            <br/>
+            <h4>Asus Zenbook Duo</h4>
+            <h2>$2400</h2>
+            <div id="1" class="space-evenly">
+                <button class="add-to-cart" onclick="addItemInCart('1');addbtn();">Add To Cart</button>
+            </div>
             <h4 class="product-details-header">Product Details</h4>
-            <div class="product-description">Focused firepower streamlines and elevates the core Windows 10 Pro gaming
-                experience in the ROG Strix G15/17. With up to a powerful AMD Ryzen™ 9 5900HX CPU and GeForce RTX™ 3070
-                GPU, everything from gaming to multitasking is fast and fluid. Go full-throttle on esports speed with a
-                competition-grade display up to 300Hz/3ms, or immerse in rich detail on a WQHD 165Hz/3ms panel.
-                Adaptive-Sync makes gameplay ultrasmooth, while advanced thermal upgrades help you stay cool under
-                pressure. No matter what your game is, you can achieve your perfect play.</div>
+            <div class="product-description">ASUS ZenBook Duo 14 lets you get things done in style: calmly, efficiently, and with zero fuss. It’s your powerful and elegant next-level companion for on-the-go productivity and creativity, featuring the ScreenPad™ Plus secondary display with a brand-new tilting design that offers effortless ergonomics and seamless workflows. Powered by the latest 11th Gen Intel® Core™ processors, ASUS ZenBook Duo 14 brings you all the benefits of tomorrow’s technology, today.
+            </div>
         </div>
     </section>
     <section class="gallary">
         <!-- <img src="../assets/546A0081-35C3-488F-BA26-EA2FFBC9E79F.png" width="14%" class="small-img"> -->
-        <img src="../assets/71n0k0TSRwS._AC_SL1500_.jpg" width="14%" class="small-img">
-        <img src="../assets/81lq4pVKgQL._AC_SL1500_.jpg" width="14%" class="small-img">
-        <img src="../assets/strix-g-2022-pink.png" width="14%" class="small-img">
+        <img src="../assets/269f6f2e-25e4-48fb-8926-b1f5d4ca75a0.png" width="14%" class="small-img">
+        <img src="../assets/download.jpeg" width="14%" class="small-img">
+        <img src="../assets/download.png" width="14%" class="small-img">
     </section>
     <footer>
         <div class="col">
@@ -64,7 +65,7 @@
                     </tr>
                     <tr>
                         <th>Phone:</th>
-                        <td>+1 1800 5042, +91 7290024403</td>
+                        <td><a href="tel:+1 1800504200">+1 1800 504200</a>, <a href="tel:+91 7290024403">+91 7290024403</td></a>
                     </tr>
                     <tr>
                         <th>Hours:</th>
@@ -97,7 +98,7 @@
                 <div>
                     <div class="row download-row">
                         <div>
-                            <a href="#" target="_blank" rel="noopener noreferrer">
+                            <a href="#" rel="noopener noreferrer">
                                 <img width="220px" src="../assets/Download_on_the_App_Store_Badge.svg.png">
                             </a>
                         </div>
@@ -119,5 +120,7 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
+<script>
+    addbtn();
+</script>
 </html>

@@ -44,6 +44,10 @@ footer {
     padding: 40px 80px;
 }
 
+footer {
+    color: #DDD;
+}
+
 .section-m1 {
     margin: 40px 0;
 }
@@ -329,7 +333,7 @@ footer p {
 footer a {
     font-size: 13px;
     text-decoration: none;
-    color: #222;
+    color: #DDD;
     margin-bottom: 10px;
 }
 
@@ -490,6 +494,12 @@ footer a {
     text-decoration: none;
 }
 
+@media screen and (max-width: 800px) {
+    #about-head {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     #prodetails {
         flex-direction: column;
@@ -497,6 +507,14 @@ footer a {
 
     .product-description {
         max-width: 100%;
+    }
+
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details>.details {
+        margin-bottom: 2em;
     }
 }
 
@@ -540,6 +558,20 @@ footer a {
     justify-content: space-around;
 }
 
+#contact-details>* {
+    margin: 0 auto;
+}
+
+#contact-details a {
+    text-decoration: none;
+}
+
+#contact-details li a,
+#contact-details li p {
+    display: flex;
+    align-items: center;
+}
+
 #contact-details .details span {
     font-size: 12px;
 }
@@ -576,4 +608,156 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+    color: #000;
+    padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 10px 30px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 1000px;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#prebook-btn:has(span) {
+    margin-top: 1em;
+    color: wheat;
+    font-size: x-large;
+    background: red;
+    padding: .8em 1.6em;
+    border-radius: 3%;
+}
+
+.counter {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: .6em;
+}
+
+.counter > * {
+    margin: 0 .5em;
+}
+
+.counter > input {
+    padding: .4rem .7rem;
+    font-size: large;
+    background: #cfd7f9;
+    border-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.space-evenly > span {
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.space-evenly > span > * {
+    margin: 0 1em;
+}
+
+@media screen and (max-width: 1300px) {
+    .space-evenly > span {
+        justify-content: left;
+    }
 }
